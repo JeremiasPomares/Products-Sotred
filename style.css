@@ -3,6 +3,9 @@ body{
     margin: 0;
 }
 header{
+    position: sticky;
+    /* visibility: hidden; */
+    top: 0.0000000001px;
     display: flex;
     background-color: black;
     min-height: 70px;
@@ -42,16 +45,21 @@ a.opc{
     border: solid 1px black;
     border-radius: 15px;
     padding: 9px;
+    transition: transform 0.5 ease-in-out;
 }
 a.opc:hover{
-    box-shadow: 0 0.1rem 0.4rem rgba(59, 58, 58, 0.788);
+    box-shadow: 0 0.1rem 0.4rem rgba(175, 175, 175, 0.788);
+    transform: translateY(-3px);
 }
 a.Login{
+    left: 0px;
     background-color: dodgerblue;
     padding: 5px;
+    padding-right: 0px;
+    padding-left: 10px;
     border: solid 1px white;
-    border-radius: 15px;
-    width: 55px;
+    /* border-radius: 15px; */
+    width: 65px;
     text-align: end;
 }
 a.Register{
